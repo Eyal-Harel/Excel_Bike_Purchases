@@ -13,7 +13,7 @@ Add SaleDateConverted Date
 update Portfolio_Project..NashvilleHousing
 set saledateConverted=convert(date,saledate)
 
--------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
 
 -- Populate Property Adress Data
 
@@ -69,7 +69,8 @@ add OwnerSplitState nvarchar(255)
 update NashvilleHousing
 set OwnerSplitState = parsename(replace(OwnerAddress,',','.'),3)
 
-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
 
 -- Change Y and N to Yes and No in "Sold as Vacant" field
 
@@ -80,7 +81,8 @@ set SoldAsVacant = Case when soldAsVacant = 'Y' then 'Yes'
 	 end
 from Portfolio_Project.dbo.NashvilleHousing
 
-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
 
 -- Remove Duplicates
 
@@ -95,7 +97,8 @@ Delete
 from RowNumCTE 
 where row_num>1
 
----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
 
 -- Delete unused columns
 
