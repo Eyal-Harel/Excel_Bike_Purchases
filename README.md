@@ -1,7 +1,2 @@
-#### This folder contains projects in various languages and programs in the field of data analysis.
-#### The projects contain data exploration, data cleaning and data visualization.
-#### Languages/Programs used :
-  - Python- Libraries used: Pandas, seaborn, matplotlib, beautifulSoup (Web scraping) 
-  - SQL
-  - Tableau
-  - Excel
+This Project analyzes data regarding bike purchases in Excel.
+The project demonstrates skills of data cleaning and data visualization, including Pivot tables and a dashboard.
